@@ -13,7 +13,7 @@ parser = argparse.ArgumentParser(description="The Vocabluary Level Analyzer (VLA
 parser.add_argument("-i", "--input", help="Specify the txt file containing the text to be analyzed.")
 parser.add_argument("-o", "--output", help="Specify the file to be created for the analysis results (txt or csv).")
 parser.add_argument("-f", "--filter", help="Using this argument will allow you to specify a wordlist of irrelevant elements to be filtered out of the vocabulary analysis.")
-parser.add_argument("-l", "--list", help="Import an external frequency list to be used instead of the stock list (algorithms are zipfed for a word list size of 20,000).")
+parser.add_argument("-l", "--list", help="Import an external frequency list to be used instead of the stock list (expected word list size: 20,000).")
 args = parser.parse_args()
 
 # stock frequency list: top 20,000 from https://raw.githubusercontent.com/mozilla-b2g/gaia/master/apps/keyboard/js/imes/latin/dictionaries/en_us_wordlist.xml
